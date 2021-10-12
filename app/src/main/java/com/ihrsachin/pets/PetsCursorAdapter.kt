@@ -1,14 +1,12 @@
 package com.ihrsachin.pets
 
 import android.content.Context
-import android.content.Intent
 import android.database.Cursor
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.CursorAdapter
 import android.widget.TextView
-import androidx.core.content.ContextCompat.startActivity
 import com.ihrsachin.pets.data.PetContract.PetEntry.COLUMN_PET_BREED
 import com.ihrsachin.pets.data.PetContract.PetEntry.COLUMN_PET_NAME
 

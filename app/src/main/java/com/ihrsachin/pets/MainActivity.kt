@@ -14,7 +14,6 @@ import android.database.Cursor
 import android.net.Uri
 import android.view.View
 import android.widget.ListView
-import android.widget.Toast
 import com.ihrsachin.pets.data.PetContract.PetEntry.CONTENT_URI
 
 
@@ -54,38 +53,9 @@ class MainActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<Cursor> 
         }
     }
 
-    /**
-     * Temporary helper method to display information in the onscreen TextView about the state of
-     * the pets database.
-     */
-//    @SuppressLint("Range")
-//    private fun displayDatabaseInfo() {
-//
-//        val projection = arrayOf(_ID,COLUMN_PET_NAME, COLUMN_PET_BREED, COLUMN_PET_GENDER, COLUMN_PET_WEIGHT)
-//
-//        val cursor = contentResolver.query(
-//            CONTENT_URI,
-//            projection,
-//            null,
-//            null,
-//            null
-//        )
-//            val listView : ListView = findViewById(R.id.listView)
-//
-//            val adapter = PetsCursorAdapter(this, cursor!!)
-//            listView.adapter = adapter
-//        val emptyView : RelativeLayout = findViewById(R.id.empty_view)
-//        if(cursor.count ==0){
-//            emptyView.visibility = VISIBLE
-//        }
-//        else{
-//            emptyView.visibility = GONE
-//        }
-//
-//    }
 
     private fun insertPet(){
-        val value = ContentValues();
+        val value = ContentValues()
         value.put(COLUMN_PET_NAME,"Toto")
         value.put(COLUMN_PET_BREED, "beerier")
         value.put(COLUMN_PET_GENDER,2)
@@ -118,11 +88,6 @@ class MainActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<Cursor> 
             .show()
     }
 
-    override fun onStart() {
-        //displayDatabaseInfo()
-        super.onStart()
-    }
-
 
     override fun onCreateOptionsMenu(menu : Menu): Boolean {
         // Inflate the menu options from the res/menu/menu_catalog.xml file.
@@ -140,7 +105,6 @@ class MainActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<Cursor> 
                 insertPet()
                 return true
             }
-            // Do nothing for now
 
             // Respond to a click on the "Delete all entries" menu option
             R.id.action_delete_all_entries -> {

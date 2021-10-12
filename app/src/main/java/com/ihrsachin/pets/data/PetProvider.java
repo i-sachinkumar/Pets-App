@@ -2,7 +2,6 @@ package com.ihrsachin.pets.data;
 
 
 import static com.ihrsachin.pets.data.PetContract.PetEntry.*;
-
 import android.content.ContentProvider;
 import android.content.ContentUris;
 import android.content.ContentValues;
@@ -259,7 +258,7 @@ public class PetProvider extends ContentProvider {
         SQLiteDatabase database = mPetDbHelper.getWritableDatabase();
 
         final int match = sUriMatcher.match(uri);
-        int deletedRow = 0;
+        int deletedRow;
         switch (match) {
             case PETS:
 

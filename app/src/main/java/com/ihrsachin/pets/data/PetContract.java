@@ -1,6 +1,5 @@
 package com.ihrsachin.pets.data;
 
-import static com.ihrsachin.pets.data.PetContract.PetEntry.TABLE_NAME;
 
 import android.content.ContentResolver;
 import android.net.Uri;
