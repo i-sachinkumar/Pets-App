@@ -3,7 +3,6 @@ package com.ihrsachin.pets
 
 import android.annotation.SuppressLint
 import android.content.ContentValues
-import android.graphics.Color
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
