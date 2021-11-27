@@ -1,9 +1,9 @@
 # Pets-App
 
 ## About the App
-### ◉ This app store information of Pets in local database.
+### ◉ This app stores information about Pets in a local database.
 ### ◉ Shows the current list of pets in your database using recycler view
-### ◉ Allow us to perform following operations in our database
+### ◉ Allow us to perform the following operations in our database
 #### ......... Add a pet
 #### ......... Edit a pet
 #### ......... Delete a pet
