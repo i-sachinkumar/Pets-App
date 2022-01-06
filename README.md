@@ -9,9 +9,3 @@
 #### ......... Delete a pet
 #### ......... Delete all pets
 
-
-
-
-
-## see the small glimpse of app in the following screenshots
-
